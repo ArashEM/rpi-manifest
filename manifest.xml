@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <!-- Settings -->
+   <default sync-j="4" revision="master"/>
+
+   <!-- Remotes -->
+   <remote fetch="git://git.openembedded.org"    name="oe"/>
+   <remote fetch="git://git.yoctoproject.org"    name="yocto"/>
+   <remote fetch="git://github.com"              name="github"/>
+
+   <!-- Base stuff -->
+   <project remote="yocto"
+            upstream="thud"
+            revision="958427e9d2ee7276887f2b02ba85cf0996dea553"
+            name="poky"
+            path="sources/poky"/>
+
+   <project remote="yocto"
+            upstream="thud" 
+            revision="4e5be97d75668804694412f9b86e9291edb38b9d"
+            name="meta-raspberrypi"
+            path="sources/meta-raspberrypi"/>
+
+
+</manifest>
