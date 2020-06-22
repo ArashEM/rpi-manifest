@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-LABEL description="PELUX Yocto build environment"
+LABEL description="Yocto build environment"
 
 # Enables us to overwrite the user and group ID for the yoctouser. See below
 ARG userid=1000
@@ -21,7 +21,7 @@ RUN apt-get update && \
         cvs \
         debianutils \
         diffstat \
-        g++-multilib \
+        g++-4.8-multilib \
         gawk \
         gcc-multilib \
         git-core \
