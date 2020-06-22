@@ -57,6 +57,9 @@ RUN apt-get update && \
         wget \
         xz-utils
 
+# Use gcc/g++ 4.8 as default compiler 
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
+
 RUN apt-get clean
 
 # For Yocto bitbake -c testimage XML reporting
