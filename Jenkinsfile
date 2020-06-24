@@ -9,7 +9,7 @@ node('docker-host-01') {
     stage('Download') {
 	checkout scm
         sh "git submodule update --init"
-        sh 'repo init -u .'
+        sh 'repo init -u . --repo-url https://github.com/ArashEM/git-repo.git'
         sh 'repo sync -v -c --no-clone-bundle -j$(nproc --all)'
     }
 
