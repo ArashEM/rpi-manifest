@@ -3,8 +3,8 @@ FROM ubuntu:16.04
 LABEL description="Yocto build environment"
 
 # Enables us to overwrite the user and group ID for the yoctouser. See below
-ARG userid=1000
-ARG groupid=1000
+ARG userid=1001
+ARG groupid=1001
 
 USER root
 
